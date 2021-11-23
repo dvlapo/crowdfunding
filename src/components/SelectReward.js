@@ -30,8 +30,8 @@ const SelectReward = ({
             className={
               // eslint-disable-next-line eqeqeq
               amountLeft == 0
-                ? 'rounded-6xl text-white bg-darkGray p-3 mt-6 lg:mt-0 lg:w-1/3 xl:w-1/4 w-3/4 font-medium'
-                : 'rounded-6xl text-white bg-moderateCyan p-3 mt-6 lg:mt-0 lg:w-1/3 xl:w-1/4 w-3/4 font-medium'
+                ? 'rounded-6xl text-white bg-darkGray p-3 mt-6 lg:mt-0 lg:w-1/3 w-3/4 font-medium'
+                : 'rounded-6xl text-white bg-moderateCyan p-3 mt-6 lg:mt-0 lg:w-1/3 w-3/4 font-medium'
             }
           >
             {buttonText}

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex p-7 sm:px-40 sm:pt-12 pb-64 justify-between relative">
+    <nav className="flex w-6/7 sm:w-4/5 mx-auto pt-7 sm:pt-12 pb-64 justify-between relative">
       <div>
         <img src={crowdfundLogo} alt="" />
       </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
 
       {isNavOpen && (
-        <ul className="text-black bg-white font-medium text-xl py-5 w-10/12 absolute top-24 left-9 sm:flex gap-10 sm:text-sm sm:text-white rounded-2xl z-30 shadow-custom ">
+        <ul className="text-black bg-white font-medium text-xl py-5 w-full absolute top-24  sm:flex gap-10 sm:text-sm sm:text-white rounded-2xl z-30 shadow-custom ">
           <li className="pb-5 ml-6 mr">
             <a href>About</a>
           </li>

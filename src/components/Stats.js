@@ -1,6 +1,6 @@
 const Stats = () => {
   return (
-    <section className="py-6 px-10 bg-white w-11/12 sm:w-1/2 mx-auto -mt-6 rounded-xl">
+    <section className="py-6 px-10 bg-white w-6/7 sm:w-1/2 mx-auto -mt-6 rounded-xl">
       <div className="lg:flex lg:w-4/5">
         <article className="text-center my-6">
           <h2 className="text-4xl mb-3 font-bold text-black ">$89,914</h2>

@@ -2,7 +2,7 @@ import SelectReward from './SelectReward';
 
 const AboutProject = () => {
   return (
-    <main className="py-12 px-8 mb-30 bg-white w-11/12 sm:w-1/2 mx-auto mt-8 rounded-xl">
+    <main className="py-12 px-8 mb-30 bg-white w-6/7 sm:w-1/2 mx-auto mt-8 rounded-xl">
       <h2 className="text-2xl mb-8 font-bold">About this project</h2>
       <p className="text-base font-medium leading-7 text-darkGray">
         The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform

@@ -1,25 +1,29 @@
 import masterCraftLogo from '../assets/logo-mastercraft.svg';
 import { useState } from 'react';
 
-const BackThisProject = () => {
+const BackThisProject = ({ openModal }) => {
   const [bookmarked, setBookmarked] = useState(false);
 
   const bookmark = () => {
     setBookmarked(true);
+    setTimeout(() => setBookmarked(false), 10000);
   };
 
   return (
-    <section className="relative bottom-14 sm:bottom-20 pb-10 bg-white w-11/12 sm:w-1/2 mx-auto sm:-mb-12 rounded-xl border border-solid border-lightGray">
+    <section className="relative bottom-14 sm:bottom-20 pb-10 bg-white w-6/7 sm:w-1/2 mx-auto sm:-mb-12 rounded-xl border border-solid border-lightGray">
       <img src={masterCraftLogo} alt="" className="mx-auto relative bottom-8" />
       <div>
-        <h1 className="px-12 text-2xl sm:text-3xl text-center font-bold">
+        <h1 className="px-12 text-xl sm:text-3xl text-center font-bold">
           Mastercraft Bamboo Monitor Riser
         </h1>
         <p className=" px-4 text-base text-center text-darkGray my-6 font-medium sm:mb-9">
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div className="flex justify-between w-10/12 mx-auto">
-          <button className="py-4 font-medium w-3/4 sm-w-1/3 md:w-5/12 rounded-5xl text-white bg-darkCyan">
+          <button
+            className="py-4 font-medium w-3/4 sm-w-1/3 md:w-5/12 rounded-5xl text-white bg-darkCyan"
+            onClick={openModal}
+          >
             Back this project
           </button>
 
@@ -44,8 +48,8 @@ const BackThisProject = () => {
             <span
               className={
                 bookmarked
-                  ? 'hidden xl:block text-darkCyan font-medium ml-6'
-                  : 'hidden xl:block text-darkGray font-medium ml-6'
+                  ? 'hidden xl:block text-darkCyan font-medium ml-3'
+                  : 'hidden xl:block text-darkGray font-medium ml-3'
               }
             >
               {bookmarked ? 'Bookmarked!' : 'Bookmark'}
