@@ -4,6 +4,7 @@ const SelectReward = ({
   text,
   amountLeft,
   buttonText,
+  openModal,
 }) => {
   return (
     // eslint-disable-next-line eqeqeq
@@ -31,8 +32,9 @@ const SelectReward = ({
               // eslint-disable-next-line eqeqeq
               amountLeft == 0
                 ? 'rounded-6xl text-white bg-darkGray p-3 mt-6 lg:mt-0 lg:w-1/3 w-3/4 font-medium'
-                : 'rounded-6xl text-white bg-moderateCyan p-3 mt-6 lg:mt-0 lg:w-1/3 w-3/4 font-medium'
+                : 'rounded-6xl text-white bg-moderateCyan p-3 mt-6 lg:mt-0 lg:w-1/3 w-3/4 font-medium hover:bg-darkCyan'
             }
+            onClick={openModal}
           >
             {buttonText}
           </button>

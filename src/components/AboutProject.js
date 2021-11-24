@@ -1,6 +1,6 @@
 import SelectReward from './SelectReward';
 
-const AboutProject = () => {
+const AboutProject = ({ openModal }) => {
   return (
     <main className="py-12 px-8 mb-30 bg-white w-6/7 sm:w-1/2 mx-auto mt-8 rounded-xl">
       <h2 className="text-2xl mb-8 font-bold">About this project</h2>
@@ -26,6 +26,7 @@ const AboutProject = () => {
     promotional campaign, and you’ll be added to a special Backer member list."
         amountLeft="101"
         buttonText="Select Reward"
+        openModal={openModal}
       />
       <SelectReward
         heading="Black Edition Stand"
@@ -35,6 +36,7 @@ const AboutProject = () => {
     added to our Backer member list. Shipping is included."
         amountLeft="64"
         buttonText="Select Reward"
+        openModal={openModal}
       />
       {/* Out of stock :/ */}
       <SelectReward

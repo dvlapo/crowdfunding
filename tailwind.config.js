@@ -20,6 +20,9 @@ module.exports = {
         '5/7': '71.4285714%',
         '6/7': '85.7142857%',
       },
+      gridTemplateRows: {
+        three: 'auto minmax(min-content, 50%) minmax(0, 40%)',
+      },
     },
     fontFamily: {
       commissioner: ['Commissioner'],
@@ -34,6 +37,9 @@ module.exports = {
       darkGray: 'hsl(0, 0%, 48%)',
       moderateCyan: 'hsl(176, 50%, 47%)',
       darkCyan: 'hsl(176, 72%, 28%)',
+    },
+    scale: {
+      99: '.99',
     },
     borderRadius: {
       none: '0',
