@@ -13,6 +13,13 @@ const EnterPledge = ({
 
   const dispatch = useDispatch();
 
+  const handleAmountInput = (e) => {
+    // eslint-disable-next-line eqeqeq
+    if (e.target.value == 0) {
+      setAmount(undefined);
+    } else setAmount(Number(e.target.value));
+  };
+
   const registerBacking = () => {
     dispatch(updateStats(Number(amount), 1));
     setFinished(true);
@@ -35,7 +42,7 @@ const EnterPledge = ({
                 type="number"
                 className="w-2/3 font-bold focus:outline-none "
                 value={amount}
-                onChange={(e) => setAmount(Number(e.target.value))}
+                onChange={handleAmountInput}
               />
             </div>
           </div>

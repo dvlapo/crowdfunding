@@ -32,15 +32,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://dvlapo-crowdfund.netlify.app/)
+- Solution URL: (https://your-solution-url.com)
+- Live Site URL: (https://dvlapo-crowdfund.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - [Tailwind CSS](https://tailwindcss.com/)
-- [React](https://reactjs.org/) - JS library
+- [React](https://reactjs.org/)
 - [React-Redux](https://react-redux.js.org/)
 
 ## Author
