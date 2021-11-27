@@ -12,7 +12,7 @@ function App() {
 
   const openModal = () => {
     setIsModalOpen(true);
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 60);
   };
 
   return (

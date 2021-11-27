@@ -21,10 +21,12 @@ const EnterPledge = ({
   };
 
   const registerBacking = () => {
-    dispatch(updateStats(Number(amount), 1));
-    setFinished(true);
-    setIsModalOpen(false);
-    window.scrollTo(0, 0);
+    if (amount >= minimumAmount) {
+      dispatch(updateStats(Number(amount), 1));
+      setFinished(true);
+      setIsModalOpen(false);
+      window.scrollTo(0, 0);
+    }
   };
 
   return (

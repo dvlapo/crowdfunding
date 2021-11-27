@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex w-6/7 items-center sm:w-4/5 mx-auto pt-7 sm:pt-12 pb-64 justify-between relative">
+    <nav className="flex w-6/7 items-end sm:w-4/5 mx-auto pt-7 sm:pt-12 pb-64 justify-between relative">
       <div>
         <img src={crowdfundLogo} alt="" />
       </div>
