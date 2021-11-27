@@ -32,7 +32,7 @@ const BackThisProject = ({ openModal }) => {
             onClick={bookmark}
           >
             <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="evenodd">
+              <g fill="none" fillRule="evenodd">
                 <circle
                   fill={bookmarked ? 'hsl(176, 72%, 28%)' : '#2f2f2f'}
                   cx="28"

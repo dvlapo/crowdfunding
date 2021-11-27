@@ -6,3 +6,11 @@ export const setStats = (stats) => {
     payload: stats,
   };
 };
+
+export const updateStats = (totalBacked, totalBackers) => {
+  return {
+    type: ActionTypes.UPDATE_STATS,
+    totalBacked,
+    totalBackers,
+  };
+};

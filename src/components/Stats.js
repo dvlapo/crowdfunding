@@ -1,14 +1,13 @@
 import { useSelector } from 'react-redux';
-// import { useEffect } from 'react';
 
 const Stats = () => {
   const daysLeft = 56;
 
-  let defaultStats = useSelector((state) => state.stats);
-
+  let defaultStats = useSelector((state) => state.stats[0]);
   let { totalBacked, totalBackers } = defaultStats;
 
-  // useEffect(() => {}, [totalBacked, totalBackers]);
+  localStorage.setItem('totalBacked', totalBacked);
+  localStorage.setItem('totalBackers', totalBackers);
 
   return (
     <section className="py-6 px-10 bg-white w-6/7 sm:w-1/2 mx-auto -mt-6 rounded-xl">

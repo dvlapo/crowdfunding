@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { connect } from 'react-redux';
-import { setStats } from '../redux/actions/pledgeActions';
-// import { useDispatch, useSelector } from 'react-redux';
+// import { connect } from 'react-redux';
+import { updateStats } from '../redux/actions/pledgeActions';
+import { useDispatch } from 'react-redux';
 
 const EnterPledge = ({
   setFinished,
@@ -10,6 +10,15 @@ const EnterPledge = ({
   setStats,
 }) => {
   const [amount, setAmount] = useState(minimumAmount);
+
+  const dispatch = useDispatch();
+
+  const registerBacking = () => {
+    dispatch(updateStats(Number(amount), 1));
+    setFinished(true);
+    setIsModalOpen(false);
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="xl:row-start-3 xl:-mt-3 xl:col-span-full">
@@ -26,18 +35,13 @@ const EnterPledge = ({
                 type="number"
                 className="w-2/3 font-bold focus:outline-none "
                 value={amount}
-                onChange={(e) => setAmount(e.target.value)}
+                onChange={(e) => setAmount(Number(e.target.value))}
               />
             </div>
           </div>
           <button
             className="bg-moderateCyan rounded-3xl text-white p-3 w-1/2 "
-            onClick={() => {
-              // setStats();
-              setFinished(true);
-              setIsModalOpen(false);
-              window.scrollTo(0, 0);
-            }}
+            onClick={registerBacking}
           >
             Continue
           </button>
@@ -47,16 +51,4 @@ const EnterPledge = ({
   );
 };
 
-const mapStateTopProps = (state) => {
-  return {
-    stats: state.stats,
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    setStats: dispatch(setStats()),
-  };
-};
-
-export default connect(mapStateTopProps, mapDispatchToProps)(EnterPledge);
+export default EnterPledge;
