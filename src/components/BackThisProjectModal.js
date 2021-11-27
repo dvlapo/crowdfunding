@@ -38,6 +38,7 @@ const BackThisProjectModal = ({ setIsModalOpen, setFinished }) => {
         <Pledge
           id={1}
           heading="Pledge with no reward"
+          minimumAmount={null}
           details="Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email."
           setFinished={setFinished}
           setIsModalOpen={setIsModalOpen}

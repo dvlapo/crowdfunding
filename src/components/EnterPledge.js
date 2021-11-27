@@ -21,7 +21,7 @@ const EnterPledge = ({
   };
 
   const registerBacking = () => {
-    if (amount >= minimumAmount) {
+    if (amount >= minimumAmount && amount !== null) {
       dispatch(updateStats(Number(amount), 1));
       setFinished(true);
       setIsModalOpen(false);
